@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankur Kumar Singh | Senior Data &amp; Product Consultant</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ankur Kumar Singh, Senior Data &amp; Product Professional with 13+ years of experience in Retail Banking, Wealth Management, IVR Contact Center Analytics, and IAM.">
+  <meta name="keywords" content="Ankur Kumar Singh, Data Analyst, Product Manager, Product Owner, PMO Lead, Contact Center Analytics, Wealth Management, Retail Banking, IAM, Power BI, SQL">
+  <meta name="author" content="Ankur Kumar Singh">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ankur Kumar Singh | Senior Data &amp; Product Consultant">
+  <meta property="og:description" content="Senior Data &amp; Product Professional with 13+ years of experience specializing in banking analytics, product management, and GenAI integration.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Ankur Kumar Singh | Senior Data &amp; Product Consultant">
+  <meta property="twitter:description" content="Senior Data &amp; Product Professional with 13+ years of experience specializing in banking analytics, product management, and GenAI integration.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind CSS Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              teal: '#14b8a6',
+              violet: '#8b5cf6',
+            },
+            dark: {
+              bg: '#030712',
+              card: 'rgba(17, 24, 39, 0.7)',
+              border: 'rgba(75, 85, 99, 0.3)',
+            },
+            light: {
+              bg: '#f8fafc',
+              card: 'rgba(255, 255, 255, 0.75)',
+              border: 'rgba(226, 232, 240, 0.8)',
+            }
+          },
+          boxShadow: {
+            'glow-indigo': '0 0 20px rgba(99, 102, 241, 0.15)',
+            'glow-teal': '0 0 20px rgba(20, 184, 166, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React & ReactDOM (Development version to allow debugging, can swap to production later) -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  
+  <!-- Babel Standalone for JSX Compilation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Custom Base Styles (Scrollbar, glassmorphism filters, theme transition) -->
+  <style type="text/css">
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    .light ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1f2937;
+      border-radius: 5px;
+      border: 2px solid #030712;
+    }
+    .light ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border: 2px solid #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #374151;
+    }
+    .light ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    /* Soft universal transitions for dark mode */
+    * {
+      transition-property: background-color, border-color, text-decoration-color, fill, stroke;
+      transition-duration: 200ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Radial gradient backgrounds for visual depth */
+    .bg-grid-glow {
+      background-size: 40px 40px;
+      background-image: 
+        radial-gradient(circle, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+    }
+    .light .bg-grid-glow {
+      background-image: 
+        radial-gradient(circle, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    }
+
+    /* Glassmorphism custom classes */
+    .glass-panel {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="bg-dark-bg text-gray-100 font-sans antialiased bg-grid-glow overflow-x-hidden selection:bg-brand-500 selection:text-white">
+
+  <!-- React Mount Root -->
+  <div id="root">
+    <!-- Visual Loading State before React Hydration -->
+    <div class="min-h-screen flex items-center justify-center flex-col bg-[#030712] text-white">
+      <div class="relative w-16 h-16 mb-4">
+        <div class="absolute inset-0 rounded-full border-4 border-t-brand-500 border-r-brand-500 border-b-gray-800 border-l-gray-800 animate-spin"></div>
+        <div class="absolute inset-2 rounded-full border-4 border-t-accent-teal border-r-transparent border-b-accent-teal border-l-transparent animate-spin [animation-direction:reverse]"></div>
+      </div>
+      <p class="font-display text-lg tracking-widest text-gray-400 uppercase animate-pulse">Initializing Experience...</p>
+    </div>
+  </div>
+
+  <!-- React App Code Combined to Prevent Local CORS Protocol Issues -->
+  <script type="text/babel">
+    // React and ReactDOM hooks from UMD build
+    const { useState, useEffect } = React;
+
+    // --- DUMMY SVG ICONS (Self-contained React Components) ---
+    const SunIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+      </svg>
+    );
+
+    const MoonIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </svg>
+    );
+
+    const BriefcaseIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+      </svg>
+    );
+
+    const ShieldIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l7-2a1 1 0 0 1 .48 0l7 2A1 1 0 0 1 20 6v7Z" />
+      </svg>
+    );
+
+    const DatabaseIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+      </svg>
+    );
+
+    const CodeIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
+      </svg>
+    );
+
+    const ChevronDownIcon = ({ className = "w-5 h-5" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+    );
+
+    const ChevronUpIcon = ({ className = "w-5 h-5" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+      </svg>
+    );
+
+    const ExternalLinkIcon = ({ className = "w-4 h-4" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+      </svg>
+    );
+
+    const DownloadIcon = ({ className = "w-4 h-4" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+      </svg>
+    );
+
+    const LinkedinIcon = ({ className = "w-5 h-5" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+        <circle cx="4" cy="4" r="2" />
+      </svg>
+    );
+
+    const MessageSquareIcon = ({ className = "w-5 h-5" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </svg>
+    );
+
+    const MailIcon = ({ className = "w-5 h-5" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </svg>
+    );
+
+    const AwardIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <circle cx="12" cy="8" r="7" />
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+      </svg>
+    );
+
+    const CpuIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <rect width="16" height="16" x="4" y="4" rx="2" />
+        <rect width="6" height="6" x="9" y="9" rx="1" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3" />
+      </svg>
+    );
+
+    const SparklesIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+        <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5Z" />
+      </svg>
+    );
+
+    const ActivityIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </svg>
+    );
+
+    const PhoneCallIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+    );
+
+    const MapPinIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+    );
+
+    const GlobeIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+        <path d="M2 12h20" />
+      </svg>
+    );
+
+    const HelpCircleIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <path d="M12 17h.01" />
+      </svg>
+    );
+
+    const MenuIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <line x1="4" x2="20" y1="12" y2="12" />
+        <line x1="4" x2="20" y1="6" y2="6" />
+        <line x1="4" x2="20" y1="18" y2="18" />
+      </svg>
+    );
+
+    const XIcon = ({ className = "w-6 h-6" }) => (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className={className}>
+        <line x1="18" x2="6" y1="6" y2="18" />
+        <line x1="6" x2="18" y1="6" y2="18" />
+      </svg>
+    );
+
+
+    // --- MAIN APP COMPONENT ---
+    function App() {
+      // Theme state: defaults to dark
+      const [theme, setTheme] = useState(() => {
+        const savedTheme = localStorage.getItem('theme');
+        return savedTheme ? savedTheme : 'dark';
+      });
+
+      // Accordion state for timeline milestones (Synechron open by default)
+      const [openMilestone, setOpenMilestone] = useState('synechron');
+
+      // Filter state for web applications
+      const [projectFilter, setProjectFilter] = useState('All');
+
+      // Mobile menu state
+      const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+      // Resume viewer mode: 'visual' or 'document'
+      const [resumeMode, setResumeMode] = useState('visual');
+
+      // Synchronize theme with HTML root class
+      useEffect(() => {
+        const root = window.document.documentElement;
+        if (theme === 'dark') {
+          root.classList.add('dark');
+          root.classList.remove('light');
+        } else {
+          root.classList.add('light');
+          root.classList.remove('dark');
+        }
+        localStorage.setItem('theme', theme);
+      }, [theme]);
+
+      const toggleTheme = () => {
+        setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+      };
+
+      // Capabilities Data
+      const capabilities = [
+        {
+          title: "Retail Banking & Regulations",
+          description: "Optimizing North American retail consumer banking workflows and delivering regulatory-compliant IT solutions (e.g. Citibank NA). SME in credit ledger controls, banking transactions, and compliance audits.",
+          icon: ShieldIcon,
+          color: "from-blue-500 to-indigo-500",
+          lightColor: "text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-950/30"
+        },
+        {
+          title: "Wealth Management",
+          description: "Delivering advanced cloud analytics dashboards and AI operations models for Morgan Stanley Wealth Management Contact Centers. Translating complex portfolios into executive visual reports.",
+          icon: AwardIcon,
+          color: "from-indigo-500 to-violet-500",
+          lightColor: "text-indigo-600 bg-indigo-50 dark:text-indigo-400 dark:bg-indigo-950/30"
+        },
+        {
+          title: "IVR Contact Center Analytics",
+          description: "Harnessing Genesys Cloud metrics, IVR response graphs, and Generative AI call summarizations to drive agent-assist dashboards and enhance customer satisfaction KPIs.",
+          icon: PhoneCallIcon,
+          color: "from-violet-500 to-purple-500",
+          lightColor: "text-purple-600 bg-purple-50 dark:text-purple-400 dark:bg-purple-950/30"
+        },
+        {
+          title: "Identity & Access Management (IAM)",
+          description: "Directed major IAM Adoption workflows at BNY Mellon. Spearheaded access entitlement automation, single-sign-on (SSO) alignments, and security audits leading a 70+ member operation.",
+          icon: DatabaseIcon,
+          color: "from-purple-500 to-pink-500",
+          lightColor: "text-pink-600 bg-pink-50 dark:text-pink-400 dark:bg-pink-950/30"
+        },
+        {
+          title: "Cloud & On-Prem Integration",
+          description: "Architecting seamless hybrid structures connecting legacy databases with AWS Cloud systems, enabling secure data pipelines, analytics synchronizations, and reporting grids.",
+          icon: CpuIcon,
+          color: "from-pink-500 to-teal-500",
+          lightColor: "text-teal-600 bg-teal-50 dark:text-teal-400 dark:bg-teal-950/30"
+        },
+        {
+          title: "Agile Product Management",
+          description: "Serving as certified Scrum Master & Product Owner. Orchestrating backlogs, translating complex requirements into PRDs, and coordinating cross-functional engineering teams.",
+          icon: SparklesIcon,
+          color: "from-teal-500 to-blue-500",
+          lightColor: "text-emerald-600 bg-emerald-50 dark:text-emerald-400 dark:bg-emerald-950/30"
+        }
+      ];
+
+      // Tech Stack Data
+      const techStack = [
+        { name: "Power BI", type: "Analytics" },
+        { name: "SQL", type: "Database" },
+        { name: "AWS Cloud", type: "Cloud" },
+        { name: "GitHub Copilot", type: "AI Tool" },
+        { name: "RAG & GenAI", type: "GenAI" },
+        { name: "Genesys Cloud", type: "Telecom" },
+        { name: "Tableau", type: "Analytics" },
+        { name: "Banking Domain Expertise", type: "Domain" },
+        { name: "Stakeholder & Vendor Management", type: "Management" },
+        { name: "Agile Product Ownership", type: "Agile" },
+        { name: "Regulatory & Compliance Adoption", type: "Domain" },
+        { name: "Contact Center Analytics", type: "Analytics" }
+      ];
+
+      // Work Experience Data
+      const experiences = [
+        {
+          id: "synechron",
+          company: "Synechron",
+          period: "Aug 2021 - Present",
+          role: "PMO Lead / Assistant Manager Data BA / Product Owner",
+          highlight: "Delivering AI-driven CCaaS analytics and scaling enterprise IAM solutions.",
+          description: [
+            "Leading AI-driven analytics and Genesys Cloud IVR migrations for Morgan Stanley Wealth Management, transforming interaction data into role-based dashboards that reduce manual analysis effort by 30%.",
+            "Managed a 70-member cross-functional team at BNY Mellon onboarding ~1,000 global applications annually onto SailPoint to drive centralized identity and access management compliance.",
+            "Facilitating daily sprints, backlog refinements, stakeholder briefings, and coordinating technical milestones across product and engineering lines."
+          ]
+        },
+        {
+          id: "fab",
+          company: "First Abu Dhabi Bank",
+          period: "Consulting PMO",
+          role: "PMO Delivery Lead / Consultant",
+          highlight: "Steered core T24 modernization and PwC regulatory audit approvals.",
+          description: [
+            "Managed PMO delivery coordinates for the core T24 banking modernization and data migration project.",
+            "Steered cross-product consumer protection regulation alignments and compliance mappings, achieving flawless PwC audit sign-offs.",
+            "Bridged communications between technical software vendors, internal banking leads, and external audit teams to streamline deliverables."
+          ]
+        },
+        {
+          id: "gravityilabs",
+          company: "Gravity iLabs",
+          period: "Dec 2019 - Aug 2021",
+          role: "Business Analyst / Product Owner / Scrum Master",
+          highlight: "Spearheaded agile delivery and custom executive dashboards.",
+          description: [
+            "Spearheaded agile delivery for the Strategy DotZero product suite, customized strategic Jira boards and Power BI dashboards to drive enterprise performance monitoring.",
+            "Responsible for client communications and operations for premium public sector, government, and Australian higher education clients.",
+            "Facilitated sprints, backlog grooming sessions, and customer demonstrations to align product roadmap metrics."
+          ]
+        },
+        {
+          id: "tcs",
+          company: "Tata Consultancy Services (TCS)",
+          period: "Jan 2013 - Dec 2019",
+          role: "Business Analyst / Subject Matter Expert",
+          highlight: "Retail banking SME for Citibank NA and internal Six Sigma audit portals.",
+          description: [
+            "Served as Subject Matter Expert and Business Analyst across North American retail banking applications at Citibank NA.",
+            "Managed ServiceNow implementations, workflow optimizations, and regulatory-compliant system adjustments.",
+            "Spearheaded audit portal configurations and requirements gathering for internal Six Sigma audit projects."
+          ]
+        }
+      ];
+
+      // Projects Data
+      const projects = [
+        {
+          id: "reqgen",
+          title: "ReqGen AI Workspace",
+          link: "https://reqgen-ai-workspace.onrender.com/",
+          description: "An intelligent requirements-generation platform designed specifically for BAs and QAs to rapidly draft PRDs, user stories, and test scenarios.",
+          brief: "AI Requirement Generator: Instant PRD, user stories & QA scenario drafting console.",
+          category: "AI & Products",
+          tags: ["Generative AI", "React", "Tailwind CSS", "Node.js", "Prompt Engineering"],
+          icon: SparklesIcon,
+          color: "indigo"
+        },
+        {
+          id: "whats-poison",
+          title: "What's Your Poison",
+          link: "https://whats-your-poison.onrender.com/",
+          description: "An interactive web tool featuring dynamic data filters and modern UI execution.",
+          brief: "Interactive Data Explorer: Advanced dynamic filtering and state visualization.",
+          category: "Analytics & Data",
+          tags: ["Data Analytics", "Dynamic Filtering", "State Management", "JavaScript"],
+          icon: ActivityIcon,
+          color: "teal"
+        },
+        {
+          id: "ev-route-routing",
+          title: "EV Route Aggregator - Routing Engine",
+          link: "https://ev-route-aggregator.onrender.com/",
+          description: "A smart aggregation platform mapping EV charging stations and routing logistics for electric vehicles.",
+          brief: "Smart EV Routing: Logistical pathfinder and charging grid aggregation engine.",
+          category: "Analytics & Data",
+          tags: ["Logistics", "Python", "Geospatial APIs", "Data Aggregation"],
+          icon: MapPinIcon,
+          color: "blue"
+        },
+        {
+          id: "ev-route-map",
+          title: "EV Route Aggregator - Station Locator",
+          link: "https://ev-route-aggregator.onrender.com/",
+          description: "A companion visual application providing live geographic distance matrices, charging speeds, and real-time station statuses.",
+          brief: "Interactive Charging Map: Searchable grid locator with real-time station availability.",
+          category: "AI & Products",
+          tags: ["Interactive Map", "AWS Cloud", "Dynamic Search", "UI UX Design"],
+          icon: GlobeIcon,
+          color: "violet"
+        },
+        {
+          id: "vaishnavi",
+          title: "Vaishnavi Project",
+          link: "https://vaishnavi-project.onrender.com/",
+          description: "Dedicated project workspace built for streamlined client interactions and system monitoring.",
+          brief: "Client Portal & Monitor: Seamless client communications hub and operational status dashboard.",
+          category: "Enterprise Workflows",
+          tags: ["Client Portal", "React", "Status Checking", "Business Analytics"],
+          icon: BriefcaseIcon,
+          color: "pink"
+        },
+        {
+          id: "dksingh",
+          title: "DK Singh Web Support",
+          link: "https://dksingh-websupport.onrender.com/",
+          description: "Automated ticketing, support interface, and business workflow web service engine.",
+          brief: "Automated Ticket Hub: Workflow ticketing portal and business operations utility engine.",
+          category: "Enterprise Workflows",
+          tags: ["Workflow Automation", "VBA & Excel Sync", "Support Desk", "Web Services"],
+          icon: HelpCircleIcon,
+          color: "emerald"
+        }
+      ];
+
+      // Filter projects by category
+      const filteredProjects = projectFilter === 'All' 
+        ? projects 
+        : projects.filter(p => p.category === projectFilter);
+
+      return (
+        <div className={`min-h-screen ${theme === 'dark' ? 'bg-[#030712] text-gray-100' : 'bg-slate-50 text-slate-800'} transition-colors duration-300 relative pb-28`}>
+          
+          {/* BACKGROUND GRAPHIC ORBS */}
+          <div className="absolute top-0 left-0 w-full overflow-hidden pointer-events-none z-0">
+            <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-brand-600/10 to-accent-violet/10 blur-[120px] dark:from-brand-600/5 dark:to-accent-violet/5 animate-pulse [animation-duration:15s]"></div>
+            <div className="absolute top-[30%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-gradient-to-br from-accent-teal/10 to-accent-violet/10 blur-[120px] dark:from-accent-teal/5 dark:to-accent-violet/5 animate-pulse [animation-duration:18s]"></div>
+          </div>
+
+          {/* --- STICKY NAVIGATION BAR --- */}
+          <header className="sticky top-0 z-50 w-full border-b backdrop-blur-md bg-opacity-70 dark:bg-opacity-70 transition-all border-slate-200/50 dark:border-slate-800/50 bg-white dark:bg-[#030712] glass-panel">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+              <a href="#" className="flex items-center gap-3 group focus:outline-none">
+                <img 
+                  src="profile.jpg" 
+                  alt="Ankur Kumar Singh" 
+                  className="w-10 h-10 rounded-xl object-cover shadow-md group-hover:scale-105 transition-transform duration-300 border border-brand-500/20" 
+                />
+                <div className="flex flex-col">
+                  <span className="font-display font-extrabold text-sm sm:text-base tracking-tight group-hover:text-brand-500 transition-colors">ANKUR KUMAR SINGH</span>
+                  <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium tracking-widest uppercase">Data &amp; Product Consultant</span>
+                </div>
+              </a>
+
+              {/* Desktop Nav Links */}
+              <nav className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                <a href="#hero" className="hover:text-brand-500 transition-colors">Home</a>
+                <a href="#capabilities" className="hover:text-brand-500 transition-colors">Capabilities</a>
+                <a href="#experience" className="hover:text-brand-500 transition-colors">Experience</a>
+                <a href="#projects" className="hover:text-brand-500 transition-colors">Applications</a>
+                <a href="#resume" className="hover:text-brand-500 transition-colors">Resume</a>
+              </nav>
+
+              {/* Theme Switcher and Desktop CTAs */}
+              <div className="flex items-center gap-4">
+                <button 
+                  onClick={toggleTheme} 
+                  className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors text-gray-500 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  aria-label="Toggle Dark/Light Mode"
+                >
+                  {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+                </button>
+                <a 
+                  href="#resume" 
+                  className="hidden lg:inline-flex items-center gap-2 text-xs sm:text-sm font-bold bg-gradient-to-r from-brand-600 to-accent-violet hover:from-brand-500 hover:to-accent-violet/90 text-white px-5 py-2.5 rounded-xl shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  Curriculum Vitae
+                </a>
+
+                {/* Mobile menu trigger */}
+                <button 
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="md:hidden p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-gray-500 dark:text-gray-400 hover:bg-slate-100 dark:hover:bg-slate-800/50"
+                  aria-label="Toggle Navigation Menu"
+                >
+                  {mobileMenuOpen ? <XIcon /> : <MenuIcon />}
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Dropdown Nav Menu */}
+            {mobileMenuOpen && (
+              <div className="md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#030712] px-4 pt-2 pb-6 flex flex-col gap-4 animate-fadeIn">
+                <a href="#hero" onClick={() => setMobileMenuOpen(false)} className="py-2 text-sm font-semibold border-b border-slate-100 dark:border-slate-900">Home</a>
+                <a href="#capabilities" onClick={() => setMobileMenuOpen(false)} className="py-2 text-sm font-semibold border-b border-slate-100 dark:border-slate-900">Capabilities</a>
+                <a href="#experience" onClick={() => setMobileMenuOpen(false)} className="py-2 text-sm font-semibold border-b border-slate-100 dark:border-slate-900">Experience</a>
+                <a href="#projects" onClick={() => setMobileMenuOpen(false)} className="py-2 text-sm font-semibold border-b border-slate-100 dark:border-slate-900">Applications</a>
+                <a href="#resume" onClick={() => setMobileMenuOpen(false)} className="py-2 text-sm font-semibold">Resume</a>
+                <a 
+                  href="#resume" 
+                  onClick={() => setMobileMenuOpen(false)} 
+                  className="w-full text-center bg-gradient-to-r from-brand-600 to-accent-violet text-white py-3 rounded-xl font-bold"
+                >
+                  View Resume
+                </a>
+              </div>
+            )}
+          </header>
+
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            {/* --- 1. HERO SECTION --- */}
+            <section id="hero" className="pt-8 sm:pt-12 pb-16 sm:pb-24 flex flex-col items-center text-center justify-center min-h-[80vh]">
+              {/* Profile Image */}
+              <div className="relative mb-6 sm:mb-8 group">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-brand-500 to-accent-teal blur-md opacity-45 group-hover:opacity-75 group-hover:blur-lg transition-all duration-300"></div>
+                <img 
+                  src="profile.jpg" 
+                  alt="Ankur Kumar Singh" 
+                  className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full border-4 border-white dark:border-[#030712] shadow-xl object-cover hover:scale-105 transition-transform duration-300" 
+                />
+              </div>
+
+              {/* Accent Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-500/20 bg-brand-500/5 text-brand-600 dark:text-brand-400 text-xs sm:text-sm font-semibold tracking-wide mb-6 sm:mb-8 animate-bounce">
+                <SparklesIcon className="w-4 h-4 text-accent-violet animate-spin [animation-duration:6s]" />
+                Generative AI &amp; Advanced Analytics Integration Specialist
+              </div>
+
+              {/* Heading Name */}
+              <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight mb-4 sm:mb-6">
+                <span className="block text-slate-900 dark:text-white">ANKUR KUMAR</span>
+                <span className="block bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-accent-violet to-accent-teal">SINGH</span>
+              </h1>
+
+              {/* Subtitle */}
+              <p className="font-display font-semibold text-lg sm:text-2xl lg:text-3xl text-gray-600 dark:text-slate-300 max-w-4xl tracking-tight mb-6 sm:mb-8 leading-relaxed">
+                Senior Data &amp; Product Professional Consultant 
+                <span className="block sm:inline sm:ml-2 text-brand-500 font-bold text-xl sm:text-2xl lg:text-3xl">| 13+ Years Experience</span>
+              </p>
+
+              {/* Bio statement */}
+              <p className="text-sm sm:text-lg text-gray-500 dark:text-slate-400 max-w-3xl leading-relaxed mb-8 sm:mb-12">
+                Results-driven Data &amp; Product professional with over 13 years of experience specializing in product management, data analytics, and business analysis. Actively leveraging <strong>Generative AI</strong>, <strong>Microsoft Copilot</strong>, and <strong>AI-assisted analytics</strong> to accelerate product delivery, automate insights, and transform complex datasets into actionable, decision-ready solutions in corporate banking and contact center environments.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full max-w-md sm:max-w-none justify-center">
+                <a 
+                  href="#resume" 
+                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-brand-600 to-accent-violet hover:from-brand-500 hover:to-accent-violet/90 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-brand-500/20 transition-all hover:scale-[1.03] active:scale-[0.97]"
+                >
+                  <DownloadIcon className="w-5 h-5" />
+                  Download Resume (PDF)
+                </a>
+                <a 
+                  href="#projects" 
+                  className="flex items-center justify-center gap-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/60 hover:bg-slate-50 dark:hover:bg-slate-800/80 text-gray-800 dark:text-white font-bold px-8 py-4 rounded-xl shadow-sm transition-all hover:scale-[1.03] active:scale-[0.97]"
+                >
+                  View Live Apps
+                </a>
+              </div>
+            </section>
+
+            {/* --- 2. CORE CAPABILITIES SECTION --- */}
+            <section id="capabilities" className="py-16 sm:py-24 border-t border-slate-200/50 dark:border-slate-800/50">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight mb-4">
+                  Core <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-accent-teal">Capabilities</span>
+                </h2>
+                <p className="text-sm sm:text-base text-gray-500 dark:text-slate-400">
+                  A comprehensive view of technical competencies, corporate expertise, and analytical proficiencies built across over a decade of leadership.
+                </p>
+              </div>
+
+              {/* Capabilities Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {capabilities.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <div 
+                      key={index} 
+                      className="group relative rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 bg-white dark:bg-slate-900/40 hover:border-brand-500/30 hover:shadow-glow-indigo dark:hover:bg-slate-900/60 transition-all duration-300 hover:-translate-y-1"
+                    >
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className={`p-3 rounded-xl bg-gradient-to-br ${item.color} text-white shadow-md group-hover:scale-110 transition-transform`}>
+                          <Icon className="w-6 h-6" />
+                        </div>
+                        <h3 className="font-display font-bold text-lg sm:text-xl group-hover:text-brand-500 transition-colors">
+                          {item.title}
+                        </h3>
+                      </div>
+                      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Technology Stack Sub-Section */}
+              <div className="mt-16 sm:mt-20 p-6 sm:p-8 rounded-3xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-100/50 dark:bg-slate-900/20 backdrop-blur-sm">
+                <h3 className="font-display font-extrabold text-xl sm:text-2xl text-center mb-8">
+                  Advanced <span className="text-brand-500">Tech Stack</span> &amp; Platform Purview
+                </h3>
+                <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
+                  {techStack.map((tech, index) => (
+                    <div 
+                      key={index} 
+                      className="px-4 py-2 sm:px-6 sm:py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/60 text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 shadow-sm flex items-center gap-2 hover:border-accent-teal/40 dark:hover:border-accent-teal/40 hover:scale-105 transition-all cursor-default"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-teal"></span>
+                      {tech.name}
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-400 font-medium ml-1">
+                        {tech.type}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* --- 3. WORK EXPERIENCE SUMMARY SECTION --- */}
+            <section id="experience" className="py-16 sm:py-24 border-t border-slate-200/50 dark:border-slate-800/50">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight mb-4">
+                  Professional <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-accent-violet">Milestones</span>
+                </h2>
+                <p className="text-sm sm:text-base text-gray-500 dark:text-slate-400">
+                  Interactive timeline charting senior leadership achievements, team coordinates, and delivery impacts.
+                </p>
+              </div>
+
+              <div className="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l border-slate-200 dark:border-slate-800">
+                {experiences.map((exp) => {
+                  const isOpen = openMilestone === exp.id;
+                  return (
+                    <div key={exp.id} className="relative mb-8 last:mb-0">
+                      {/* Timeline Glowing Node */}
+                      <button 
+                        onClick={() => setOpenMilestone(isOpen ? '' : exp.id)}
+                        className={`absolute left-[-31px] sm:left-[-39px] top-1.5 w-6 h-6 sm:w-8 sm:h-8 rounded-full border-4 flex items-center justify-center transition-all focus:outline-none ${
+                          isOpen 
+                            ? 'border-brand-500 bg-white dark:bg-[#030712] ring-4 ring-brand-500/20' 
+                            : 'border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 hover:border-brand-400'
+                        }`}
+                        aria-label={`Expand timeline milestone for ${exp.company}`}
+                      >
+                        <div className={`w-2 h-2 rounded-full ${isOpen ? 'bg-brand-500' : 'bg-transparent'}`}></div>
+                      </button>
+
+                      {/* Experience Main Card */}
+                      <div 
+                        className={`rounded-2xl border transition-all duration-300 bg-white dark:bg-slate-900/30 overflow-hidden ${
+                          isOpen 
+                            ? 'border-brand-500/40 shadow-glow-indigo' 
+                            : 'border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700'
+                        }`}
+                      >
+                        {/* Collapsible Header */}
+                        <button 
+                          onClick={() => setOpenMilestone(isOpen ? '' : exp.id)}
+                          className="w-full text-left p-6 sm:p-8 flex items-start justify-between gap-4 focus:outline-none"
+                        >
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full gap-2 sm:gap-4">
+                            <div>
+                              <div className="flex items-center gap-3">
+                                <span className="font-display font-extrabold text-lg sm:text-2xl text-slate-900 dark:text-white">
+                                  {exp.company}
+                                </span>
+                                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20 shrink-0">
+                                  {exp.period}
+                                </span>
+                              </div>
+                              <span className="block font-medium text-sm sm:text-base text-gray-500 dark:text-slate-400 mt-1 font-display">
+                                {exp.role}
+                              </span>
+                            </div>
+                            <div className="text-xs sm:text-sm font-semibold text-brand-500 tracking-tight shrink-0">
+                              {exp.highlight}
+                            </div>
+                          </div>
+                          <span className="text-gray-400 shrink-0 self-center">
+                            {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                          </span>
+                        </button>
+
+                        {/* Collapsible Body Content */}
+                        <div 
+                          className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                            isOpen ? 'max-h-[500px] border-t border-slate-150 dark:border-slate-800' : 'max-h-0'
+                          }`}
+                        >
+                          <div className="p-6 sm:p-8 bg-slate-50/50 dark:bg-slate-950/20">
+                            <ul className="space-y-4">
+                              {exp.description.map((bullet, idx) => (
+                                <li key={idx} className="flex gap-3 text-sm sm:text-base text-gray-600 dark:text-slate-300 leading-relaxed">
+                                  <span className="text-brand-500 font-bold text-lg leading-none shrink-0">•</span>
+                                  <span>{bullet}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            {/* --- 4. FEATURED APPLICATIONS & PRODUCTS SECTION --- */}
+            <section id="projects" className="py-16 sm:py-24 border-t border-slate-200/50 dark:border-slate-800/50">
+              <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
+                <div className="max-w-2xl">
+                  <h2 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight mb-4">
+                    Featured Live <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-accent-teal">Applications</span>
+                  </h2>
+                  <p className="text-sm sm:text-base text-gray-500 dark:text-slate-400">
+                    A gallery of fully operational web products with dynamic routing, AI integrations, data controls, and real-time support. Click any card to launch.
+                  </p>
+                </div>
+
+                {/* Project Filter Controls */}
+                <div className="flex flex-wrap gap-2 shrink-0">
+                  {['All', 'AI & Products', 'Analytics & Data', 'Enterprise Workflows'].map((category) => (
+                    <button
+                      key={category}
+                      onClick={() => setProjectFilter(category)}
+                      className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all ${
+                        projectFilter === category 
+                          ? 'border-brand-500 bg-brand-500 text-white shadow-md shadow-brand-500/10'
+                          : 'border-slate-200 dark:border-slate-800 hover:border-slate-350 dark:hover:border-slate-700 bg-white dark:bg-slate-900/30'
+                      }`}
+                    >
+                      {category}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {filteredProjects.map((project) => {
+                  const Icon = project.icon;
+                  return (
+                    <div 
+                      key={project.id}
+                      className="group rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900/40 overflow-hidden flex flex-col justify-between hover:border-brand-500/30 hover:shadow-glow-teal dark:hover:bg-slate-900/60 transition-all duration-300 hover:-translate-y-1"
+                    >
+                      <div className="p-6 sm:p-8">
+                        {/* Header */}
+                        <div className="flex items-center justify-between mb-4">
+                          <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-500/15 to-accent-teal/15 dark:from-brand-500/10 dark:to-accent-teal/10 border border-brand-500/10 flex items-center justify-center text-brand-500 dark:text-accent-teal">
+                            <Icon className="w-6 h-6" />
+                          </div>
+                          <span className="text-[10px] font-bold text-gray-400 dark:text-slate-500 uppercase tracking-widest bg-slate-100 dark:bg-slate-800/50 px-2.5 py-1 rounded">
+                            {project.category}
+                          </span>
+                        </div>
+
+                        {/* Title */}
+                        <h3 className="font-display font-extrabold text-xl sm:text-2xl text-slate-900 dark:text-white group-hover:text-brand-500 transition-colors mb-2">
+                          {project.title}
+                        </h3>
+
+                        {/* Brief explanation (Request: short brief description with icon) */}
+                        <div className="flex items-start gap-2 bg-slate-50 dark:bg-slate-950/40 p-2.5 rounded-lg border border-slate-150 dark:border-slate-900 mb-4 text-xs font-semibold text-brand-600 dark:text-accent-teal leading-relaxed">
+                          <SparklesIcon className="w-4 h-4 shrink-0 mt-0.5 text-accent-violet" />
+                          <span>{project.brief}</span>
+                        </div>
+
+                        {/* Extended Description */}
+                        <p className="text-xs sm:text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-6">
+                          {project.description}
+                        </p>
+
+                        {/* Tag Chips */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {project.tags.map((tag, idx) => (
+                            <span 
+                              key={idx} 
+                              className="px-2.5 py-1 rounded-md text-[10px] sm:text-xs font-bold border border-slate-100 dark:border-slate-900 bg-slate-50 dark:bg-slate-950/80 text-gray-500 dark:text-slate-400 hover:text-brand-500 transition-colors"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Launch Footer Button */}
+                      <a 
+                        href={project.link}
+                        target="_blank"
+                        className="w-full py-4 border-t border-slate-200 dark:border-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-800/30 font-bold text-sm tracking-wide flex items-center justify-center gap-2 text-brand-500 hover:text-brand-600 transition-all focus:outline-none"
+                      >
+                        <span>Launch Live Application</span>
+                        <ExternalLinkIcon />
+                      </a>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+
+            {/* --- 5. INTEGRATED RESUME VIEWER SECTION --- */}
+            <section id="resume" className="py-16 sm:py-24 border-t border-slate-200/50 dark:border-slate-800/50">
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <h2 className="font-display font-extrabold text-3xl sm:text-5xl tracking-tight mb-4">
+                  Curriculum <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-accent-teal">Vitae</span>
+                </h2>
+                <p className="text-sm sm:text-base text-gray-500 dark:text-slate-400">
+                  Review and download the comprehensive professional ledger of qualifications, credentials, and references.
+                </p>
+              </div>
+
+              <div className="max-w-5xl mx-auto rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/40 shadow-xl overflow-hidden">
+                {/* Viewer Control Panel */}
+                <div className="p-4 sm:p-6 border-b border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50/50 dark:bg-slate-950/20">
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => setResumeMode('visual')}
+                      className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
+                        resumeMode === 'visual'
+                          ? 'bg-brand-500 text-white shadow-md'
+                          : 'hover:bg-slate-100 dark:hover:bg-slate-800/50 text-gray-500 dark:text-slate-400'
+                      }`}
+                    >
+                      Executive Summary View
+                    </button>
+                    <button
+                      onClick={() => setResumeMode('document')}
+                      className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
+                        resumeMode === 'document'
+                          ? 'bg-brand-500 text-white shadow-md'
+                          : 'hover:bg-slate-100 dark:hover:bg-slate-800/50 text-gray-500 dark:text-slate-400'
+                      }`}
+                    >
+                      Full Document Preview
+                    </button>
+                  </div>
+
+                  {/* Explicit Download Link Anchor */}
+                  <a 
+                    href="resume.pdf" 
+                    download="Ankur_Kumar_Singh_Resume.pdf"
+                    className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-600 to-accent-violet hover:from-brand-500 hover:to-accent-violet/90 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <DownloadIcon />
+                    Download PDF
+                  </a>
+                </div>
+
+                {/* Viewer Container */}
+                <div className="p-6 sm:p-8 min-h-[400px] flex items-center justify-center">
+                  {resumeMode === 'visual' ? (
+                    /* Interactive Executive Summary View (Works perfectly on mobile) */
+                    <div className="w-full text-slate-800 dark:text-slate-200 max-w-4xl font-sans">
+                      {/* Header metadata */}
+                      <div className="border-b border-slate-200 dark:border-slate-800 pb-6 mb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                          <img 
+                            src="profile.jpg" 
+                            alt="Ankur Kumar Singh" 
+                            className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border border-slate-200 dark:border-slate-800 object-cover shadow-sm shrink-0" 
+                          />
+                          <div>
+                            <h3 className="font-display font-black text-2xl sm:text-3xl text-slate-900 dark:text-white">Ankur Kumar Singh</h3>
+                            <p className="text-sm font-semibold text-brand-500 dark:text-brand-400 mt-1 uppercase tracking-wider font-display">Senior Data &amp; Product Consultant</p>
+                          </div>
+                        </div>
+                        <div className="text-xs sm:text-sm text-gray-500 dark:text-slate-400 space-y-1">
+                          <p>📍 Bangalore, India</p>
+                          <p>✉️ adks001@gmail.com</p>
+                          <p>🔗 linkedin.com/in/adks001</p>
+                        </div>
+                      </div>
+
+                      {/* Summary */}
+                      <div className="mb-6">
+                        <h4 className="font-display font-bold text-xs sm:text-sm text-brand-500 uppercase tracking-widest mb-2">Executive Summary</h4>
+                        <p className="text-xs sm:text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+                          Accomplished Business Analyst and Product Owner with 13+ years of experience steering client interactions and designing modern data solutions for retail banking, wealth portfolios, contact center metrics, and IAM domains. Highly proficient in Power BI, SQL databases, Genesys cloud systems, and generative AI workflow acceleration.
+                        </p>
+                      </div>
+
+                      {/* Key Highlights Grid */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                          <h4 className="font-display font-bold text-xs sm:text-sm text-brand-500 uppercase tracking-widest mb-3">Professional Achievements</h4>
+                          <ul className="space-y-3 text-xs sm:text-sm text-gray-500 dark:text-slate-400">
+                            <li className="flex gap-2">
+                              <span className="text-brand-500 font-bold">•</span>
+                              <span><strong>Morgan Stanley CCaaS:</strong> Leading AI-driven analytics and Genesys Cloud IVR migrations to transform interaction data into actionable role-based dashboards, reducing manual analysis effort by 30%.</span>
+                            </li>
+                            <li className="flex gap-2">
+                              <span className="text-brand-500 font-bold">•</span>
+                              <span><strong>BNY Mellon IAM:</strong> Managed a 70-member team onboarding ~1,000 global small/large applications annually onto SailPoint to drive centralized identity and access management compliance.</span>
+                            </li>
+                            <li className="flex gap-2">
+                              <span className="text-brand-500 font-bold">•</span>
+                              <span><strong>First Abu Dhabi Bank:</strong> Managed PMO delivery for core T24 banking modernization and steered cross-product consumer protection regulation alignment for flawless PwC audit sign-offs.</span>
+                            </li>
+                            <li className="flex gap-2">
+                              <span className="text-brand-500 font-bold">•</span>
+                              <span><strong>Gravity iLabs Strategy DotZero:</strong> Spearheaded agile delivery and customized strategic Jira and Power BI dashboards to drive enterprise performance monitoring for premium public sector and Australian higher education clients.</span>
+                            </li>
+                            <li className="flex gap-2">
+                              <span className="text-brand-500 font-bold">•</span>
+                              <span><strong>Citibank NA (TCS):</strong> Served as Subject Matter Expert and Business Analyst across North American retail banking applications, ServiceNow implementations, and internal Six Sigma audit portals.</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div>
+                          <h4 className="font-display font-bold text-xs sm:text-sm text-brand-500 uppercase tracking-widest mb-3">Key Technical Competencies</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {["Banking Domain Expertise", "Stakeholder & Vendor Management", "Agile Product Ownership", "Regulatory & Compliance Adoption", "Contact Center Analytics", "Power BI", "SQL", "AWS Cloud", "GitHub Copilot", "RAG", "Generative AI", "Tableau", "Jira", "Genesys Cloud"].map((tag, idx) => (
+                              <span key={idx} className="px-2.5 py-1 text-[10px] sm:text-xs font-bold rounded-md bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-gray-500 dark:text-slate-400">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Professional Milestones (Timeline View) */}
+                      <div className="mb-6 border-t border-slate-200 dark:border-slate-800 pt-6">
+                        <h4 className="font-display font-bold text-xs sm:text-sm text-brand-500 uppercase tracking-widest mb-4">Professional Milestones</h4>
+                        <div className="relative pl-4 border-l-2 border-slate-200 dark:border-slate-800 space-y-4 ml-2">
+                          {experiences.map((exp, idx) => (
+                            <div key={idx} className="relative">
+                              <span className="absolute left-[-25px] top-1 w-3.5 h-3.5 rounded-full border-2 border-brand-500 bg-white dark:bg-slate-950"></span>
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+                                <span className="font-bold text-slate-800 dark:text-slate-200 text-sm">{exp.company}</span>
+                                <span className="text-[10px] sm:text-xs font-semibold text-brand-600 dark:text-brand-400 bg-brand-500/5 px-2 py-0.5 rounded border border-brand-500/10 shrink-0">{exp.period}</span>
+                              </div>
+                              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs text-slate-500 dark:text-slate-400 font-display mt-0.5">
+                                <span>{exp.role}</span>
+                                <span className="text-[10px] text-slate-400 italic shrink-0 mt-0.5 sm:mt-0">{exp.highlight}</span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Educational Details */}
+                      <div className="border-t border-slate-200 dark:border-slate-800 pt-6">
+                        <h4 className="font-display font-bold text-xs sm:text-sm text-brand-500 uppercase tracking-widest mb-2">Education &amp; Credentials</h4>
+                        <div className="flex justify-between items-start text-xs sm:text-sm text-gray-500 dark:text-slate-400">
+                          <div>
+                            <p className="font-bold text-slate-800 dark:text-slate-200">Bachelor of Engineering (B.E.)</p>
+                            <p>Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal</p>
+                          </div>
+                          <span className="font-medium text-slate-400 shrink-0">Graduated: 2012</span>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    /* Full Document Frame (Renders PDF element if supported, falls back gracefully) */
+                    <div className="w-full h-[600px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-950/20 relative">
+                      <object 
+                        data="resume.pdf" 
+                        type="application/pdf" 
+                        className="w-full h-full"
+                      >
+                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                          <div className="w-16 h-16 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-500 mb-4 animate-pulse">
+                            <DownloadIcon className="w-8 h-8" />
+                          </div>
+                          <h4 className="font-display font-extrabold text-lg mb-2">Full Document Preview</h4>
+                          <p className="text-sm text-gray-500 dark:text-slate-400 max-w-sm mb-6">
+                            PDF preview is not supported natively by your browser or mobile screen. You can download the physical file directly using the button below.
+                          </p>
+                          <a 
+                            href="resume.pdf" 
+                            download="Ankur_Kumar_Singh_Resume.pdf"
+                            className="bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md flex items-center gap-2"
+                          >
+                            <DownloadIcon />
+                            Download resume.pdf
+                          </a>
+                        </div>
+                      </object>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </section>
+
+          </main>
+
+          {/* --- 6. FLOATING CONNECTIVITY DOCK --- */}
+          <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-white/70 dark:bg-[#0f172a]/75 border border-slate-200/60 dark:border-slate-800/60 rounded-full px-5 py-3 shadow-2xl backdrop-blur-md flex items-center gap-4 hover:scale-105 hover:border-brand-500/30 transition-all glass-panel">
+            
+            {/* Connection tag */}
+            <span className="hidden sm:inline text-xs font-extrabold tracking-widest text-slate-400 uppercase select-none mr-1">
+              Connect:
+            </span>
+
+            {/* LinkedIn Profile */}
+            <a 
+              href="https://www.linkedin.com/in/adks001/" 
+              target="_blank"
+              className="w-10 h-10 rounded-full bg-[#0a66c2] hover:bg-[#004182] text-white flex items-center justify-center transition-all hover:scale-110 shadow-md hover:shadow-[#0a66c2]/20"
+              title="LinkedIn Profile"
+              aria-label="Connect on LinkedIn"
+            >
+              <LinkedinIcon />
+            </a>
+
+            {/* Instant WhatsApp (Pre-fill text: "Hi Ankur, I viewed your portfolio and would love to connect.") */}
+            <a 
+              href="https://wa.me/917506009321?text=Hi%20Ankur,%20I%20viewed%20your%20portfolio%20and%20would%20love%20to%20connect." 
+              target="_blank"
+              className="w-10 h-10 rounded-full bg-[#25d366] hover:bg-[#128c7e] text-white flex items-center justify-center transition-all hover:scale-110 shadow-md hover:shadow-[#25d366]/20"
+              title="WhatsApp Chat"
+              aria-label="Connect on WhatsApp"
+            >
+              <MessageSquareIcon />
+            </a>
+
+            {/* Direct Email Action */}
+            <a 
+              href="mailto:adks001@gmail.com"
+              className="w-10 h-10 rounded-full bg-brand-600 hover:bg-brand-500 text-white flex items-center justify-center transition-all hover:scale-110 shadow-md hover:shadow-brand-500/20"
+              title="Direct Email"
+              aria-label="Send Email"
+            >
+              <MailIcon />
+            </a>
+          </div>
+
+          {/* --- FOOTER --- */}
+          <footer className="w-full border-t border-slate-200/50 dark:border-slate-800/50 py-12 text-center absolute bottom-0 bg-white/30 dark:bg-slate-950/20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <p className="font-display font-extrabold text-sm text-slate-800 dark:text-slate-300">
+                © 2026 Ankur Kumar Singh.
+              </p>
+              <p className="text-xs text-gray-500 dark:text-slate-500 mt-1 font-medium tracking-wide">
+                Built with Advanced Analytics &amp; AI Frameworks.
+              </p>
+            </div>
+          </footer>
+
+        </div>
+      );
+    }
+
+    // Render the application to DOM
+    const rootElement = document.getElementById("root");
+    ReactDOM.createRoot(rootElement).render(<App />);
+  </script>
+
+</body>
+</html>
