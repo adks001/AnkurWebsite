@@ -162,14 +162,9 @@ def generate_pdf():
     # Synechron
     story.append(Paragraph("<b>Synechron</b> (Aug 2021 - Present)  |  <b>PMO Lead / Asst. Manager Data BA / Product Owner</b>", company_style))
     story.append(Spacer(1, 2))
-    story.append(Paragraph("• <b>Morgan Stanley:</b> Leading AI-driven analytics and Genesys Cloud IVR migrations to transform interaction data into actionable role-based dashboards, reducing manual analysis effort by 30%.", bullet_style))
-    story.append(Paragraph("• <b>BNY Mellon:</b> Managed a 70-member team onboarding ~1,000 global small / large applications annually onto SailPoint to drive centralized identity and access management compliance.", bullet_style))
-    story.append(Spacer(1, 6))
-
-    # First Abu Dhabi Bank
-    story.append(Paragraph("<b>First Abu Dhabi Bank</b>  |  <b>PMO Lead / Consultant</b>", company_style))
-    story.append(Spacer(1, 2))
-    story.append(Paragraph("• Managed PMO delivery for core T24 banking modernization and steered cross-product consumer protection regulation alignment for flawless PwC audit sign-offs.", bullet_style))
+    story.append(Paragraph("• <b>Morgan Stanley:</b> Morgan Stanley | Wealth Management Contact Center Analytics: Leading AI-driven analytics and Genesys Cloud IVR migrations to transform interaction data into actionable, role-based dashboards. Partnering with engineering squads to deploy Generative AI use cases—including call summarization and agent productivity metrics—successfully reducing manual analysis effort by 30%", bullet_style))
+    story.append(Paragraph("• <b>BNY Mellon:</b> BNY Mellon | IAM Adoption Program: Managed a 70-member team onboarding ~1,000 global applications annually onto a centralized SailPoint platform. Standardized access governance across multiple business lines and streamlined tracking with custom JIRA dashboards.", bullet_style))
+    story.append(Paragraph("• <b>First Abu Dhabi Bank:</b> First Abu Dhabi Bank | Core T24 Modernization & PMO: Managed PMO delivery coordinates for core T24 banking modernization and data migrations. Steered cross-product consumer protection regulation alignments and compliance mapping, achieving flawless PwC audit sign-offs.", bullet_style))
     story.append(Spacer(1, 6))
 
     # Gravity iLabs
