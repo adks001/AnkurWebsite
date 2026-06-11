@@ -393,6 +393,20 @@
           icon: SparklesIcon,
           color: "from-teal-500 to-blue-500",
           lightColor: "text-emerald-600 bg-emerald-50 dark:text-emerald-400 dark:bg-emerald-950/30"
+        },
+        {
+          title: "AI-Augmented Development (SDLC)",
+          description: "Accelerating the software development lifecycle by integrating advanced GenAI tools, GitHub Copilot code generation, and prompt engineering templates to streamline requirement drafting and test scenario scoping.",
+          icon: SparklesIcon,
+          color: "from-pink-500 to-rose-500",
+          lightColor: "text-pink-600 bg-pink-50 dark:text-pink-400 dark:bg-pink-950/30"
+        },
+        {
+          title: "Data Analytics & BI Visualization",
+          description: "Transforming raw data into narrative business solutions. Designing interactive, cloud-connected Power BI and Tableau dashboards to deliver role-based operational insights and executive KPIs.",
+          icon: ActivityIcon,
+          color: "from-emerald-500 to-teal-500",
+          lightColor: "text-emerald-600 bg-emerald-50 dark:text-emerald-400 dark:bg-emerald-950/30"
         }
       ];
 
@@ -685,7 +699,7 @@
               </div>
 
               {/* Capabilities Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 {capabilities.map((item, index) => {
                   const Icon = item.icon;
                   return (
@@ -710,19 +724,19 @@
               </div>
 
               {/* Technology Stack Sub-Section */}
-              <div className="mt-16 sm:mt-20 p-6 sm:p-8 rounded-3xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-100/50 dark:bg-slate-900/20 backdrop-blur-sm">
+              <div className="mt-16 sm:mt-20 p-4 sm:p-8 rounded-3xl border border-slate-200/60 dark:border-slate-800/60 bg-slate-100/50 dark:bg-slate-900/20 backdrop-blur-sm">
                 <h3 className="font-display font-extrabold text-xl sm:text-2xl text-center mb-8">
                   Advanced <span className="text-brand-500">Tech Stack</span> &amp; Platform Purview
                 </h3>
-                <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
+                <div className="grid grid-cols-2 gap-2 sm:gap-3 md:flex md:flex-wrap justify-center">
                   {techStack.map((tech, index) => (
                     <div 
                       key={index} 
-                      className="px-4 py-2 sm:px-6 sm:py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/60 text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 shadow-sm flex items-center gap-2 hover:border-accent-teal/40 dark:hover:border-accent-teal/40 hover:scale-105 transition-all cursor-default"
+                      className="px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/60 text-[10px] sm:text-xs md:text-sm font-bold text-slate-700 dark:text-slate-300 shadow-sm flex items-center justify-between md:justify-start gap-1.5 hover:border-accent-teal/40 dark:hover:border-accent-teal/40 hover:scale-[1.02] transition-all cursor-default w-full md:w-auto"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-teal"></span>
-                      {tech.name}
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-400 font-medium ml-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-teal shrink-0"></span>
+                      <span className="truncate">{tech.name}</span>
+                      <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-400 font-medium shrink-0 ml-1">
                         {tech.type}
                       </span>
                     </div>
