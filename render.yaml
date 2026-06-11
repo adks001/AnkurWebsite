@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ankur-portfolio-website
+    env: static
+    buildCommand: ""
+    publishPath: "."
