@@ -3,4 +3,4 @@ services:
     name: ankur-portfolio-website
     env: static
     buildCommand: ""
-    publishPath: "."
+    staticPublishPath: "."
